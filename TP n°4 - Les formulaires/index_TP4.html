@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TP n°4 les formulaires">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3447/3447545.png">
+    <title>GIVRY Simon TP n°4 Les formulaires</title>
+</head>
+
+<body>
+    <header>
+        <h1> GIVRY Simon&nbsp;- Les formulaires</h1>
+    </header>
+    <main>
+        <h2>Mon premier formulaire</h2>
+        <!-- Début Premier formulaire -->
+        <form action="#" method="GET">
+            <!-- genre de l'utilisateur -->
+            <div>
+                <input type="radio" id="Homme" name="Sexe" value="Homme">
+                <label for="Homme">Homme</label>
+
+                <input type="radio" id="Femme" name="Sexe" value="Femme">
+                <label for="Femme">Femme</label>
+
+                <input type="radio" id="NonRenseigne" name="Sexe" value="NonRenseigne">
+                <label for="NonRenseigne">Non renseigné</label>
+            </div>
+            <!-- Fin genre utilisateur -->
+            <!-- Nom de l'utilisateur -->
+            <div>
+                <label for="Nom">Nom&nbsp;:</label>
+                <input type="text" name="Nom" id="Nom">
+            </div>
+            <!-- Fin Nom de l'utilisateur -->
+            <!-- Prénom de l'utilisateur -->
+            <div>
+                <label for="Prénom">Prénom&nbsp;:</label>
+                <input type="text" name="Prénom" id="Prénom">
+            </div>
+            <!-- Fin Prénom de l'utilisateur -->
+            <!-- Age de l'utilisateur -->
+            <div>
+                <label for="Age">Age&nbsp;:</label>
+                <input type="number" name="Age" id="Age" min="16" max="99">
+            </div>
+            <!-- Fin Age de l'utilisateur -->
+            <!-- Email de l'utilisateur -->
+            <div>
+                <label for="email">Email&nbsp;:</label>
+                <input type="email" name="emai" id="email">
+            </div>
+            <!-- Fin Email de l'utilisateur -->
+            <!-- message de l'utilisateur -->
+            <div>
+                <label for="message">Message&nbsp;:</label>
+                <textarea name="message" id="message" cols="20" rows="3"></textarea>
+            </div>
+            <!-- Fin message de l'utilisateur -->
+            <!-- Case des conditions relatives -->
+            <div>
+                <input type="checkbox" name="ToS" id="ToS">
+                <label for="ToS"> En cochant cette case j'accepte les conditions relatives à l'utilisation de mes
+                    données personnelles.(accéder aux mentions légales) </label>
+            </div>
+            <!-- Fin Case des conditions relatives -->
+            <!-- bouton d'envoi -->
+            <div>
+                <input type="submit" name="envoyer" id="envoyer" value="Envoyer le message">
+            </div>
+            <!-- Fin bouton d'envoi -->
+        </form>
+        <!-- Fin premier formulaire -->
+        <hr>
+        <h2>Ensemble de champs</h2>
+        <!-- Début Second formulaire -->
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>MON SECOND FORMULAIRE</legend>
+                <fieldset>
+                    <legend>Identité</legend>
+                    <!-- genre de l'utilisateur -->
+                    <div>
+                        <input type="radio" id="man" name="genre" value="man">
+                        <label for="man">Homme</label>
+
+                        <input type="radio" id="woman" name="genre" value="woman">
+                        <label for="woman">Femme</label>
+
+                        <input type="radio" id="NR" name="genre" value="nr">
+                        <label for="NR">Non renseigné</label>
+                    </div>
+                    <!-- Fin genre de l'utilisateur -->
+                    <!-- Nom de l'utilisateur -->
+                    <div>
+                        <label for="Sname">Nom</label>
+                        <input type="text" name="Sname" id="Sname" placeholder="ex : Deschamps">
+                    </div>
+                    <!-- Fin Nom de l'utilisateur -->
+                    <!-- Prénom de l'utilisateur -->
+                    <div>
+                        <label for="Fname">Prénom</label>
+                        <input type="text" name="Fname" id="Fname" placeholder="ex : Didier">
+                    </div>
+                    <!-- FinPrénom de l'utilisateur -->
+                    <!-- Age de l'utilisateur -->
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" min="16" max="99" placeholder="ex : 58">
+                    </div>
+                    <!-- Fin Age de l'utilisateur -->
+                </fieldset>
+                <fieldset>
+                    <legend>Situation personnelle</legend>
+                    <!-- situation familiale de l'utilisateur -->
+                    <div>
+                        <input type="radio" id="célibataire" name="Situation" value="célibataire">
+                        <label for="célibataire">célibataire</label>
+                        <input type="radio" id="marié" name="Situation" value="marié">
+                        <label for="marié">marié</label>
+                        <input type="radio" id="veuf" name="Situation" value="veuf">
+                        <label for="veuf">veuf</label>
+                        <input type="radio" id="union-libre" name="Situation" value="union-libre">
+                        <label for="union-libre">Union-libre </label>
+                    </div>
+                    <!-- Fin situation familiale de l'utilisateur -->
+                </fieldset>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <!-- Numéro de téléphone de l'utilisateur -->
+                    <div>
+                        <label for="tel">Téléphone</label>
+                        <input type="tel" name="tel" id="tel" placeholder="ex : 06 01 02 03 04">
+                    </div>
+                    <!-- Fin Numéro de téléphone de l'utilisateur -->
+                    <!-- Email de l'utilisateur -->
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" id="Email" placeholder="ex : d.d@gmail.com">
+                    </div>
+                    <!-- Fin Email de l'utilisateur -->
+                    <!-- Case de confirmation -->
+                    <div>
+                        <input type="checkbox" name="accepter" id="accepter">
+                        <label for="accepter">En cochant cette case je confirme que les données sont exactes.</label>
+                    </div>
+                    <!-- Fin Case de confirmation -->
+                    <!-- bouton envoyer -->
+                    <div>
+                        <input type="submit" name="transmettre" id="transmettre" value="Transmettre mes coordonnées">
+                    </div>
+                    <!-- fin bouton envoyer -->
+                </fieldset>
+            </fieldset>
+        </form>
+        <!-- Fin du second formulaire -->
+    </main>
+</body>
+
+</html>
